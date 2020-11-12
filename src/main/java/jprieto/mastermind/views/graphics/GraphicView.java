@@ -5,7 +5,7 @@ import jprieto.mastermind.controllers.ResumeController;
 import jprieto.mastermind.controllers.StartController;
 import jprieto.mastermind.controllers.UseCaseController;
 
-public class View extends jprieto.mastermind.views.View {
+public class GraphicView extends jprieto.mastermind.views.View {
 
 	@Override
 	public void interact(UseCaseController controller) {

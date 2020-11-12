@@ -1,12 +1,12 @@
 package jprieto.mastermind;
 
-import jprieto.mastermind.views.console.View;
+import jprieto.mastermind.views.console.ConsoleView;
 
 public class ConsoleMasterMind extends MasterMind {
 
 	@Override
-	protected View createView(){
-		return new View();
+	protected ConsoleView createView(){
+		return new ConsoleView();
 	}
 
 	public static void main(String[] args) {

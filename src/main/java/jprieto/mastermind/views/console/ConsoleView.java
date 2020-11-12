@@ -5,13 +5,13 @@ import jprieto.mastermind.controllers.ResumeController;
 import jprieto.mastermind.controllers.StartController;
 import jprieto.mastermind.controllers.UseCaseController;
 
-public class View extends jprieto.mastermind.views.View{
+public class ConsoleView extends jprieto.mastermind.views.View{
 
 	private StartView startView;
 	private PlayView playView;
 	private ResumeView resumeView;
 
-	public View() {
+	public ConsoleView() {
 		this.startView = new StartView();
 		this.playView = new PlayView();
 		this.resumeView = new ResumeView();

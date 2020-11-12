@@ -1,12 +1,12 @@
 package jprieto.mastermind;
 
-import jprieto.mastermind.views.graphics.View;
+import jprieto.mastermind.views.graphics.GraphicView;
 
 public class GraphicsMasterMind extends MasterMind {
 	
 	@Override
-	protected View createView(){
-		return new View();
+	protected GraphicView createView(){
+		return new GraphicView();
 	}
 
 	public static void main(String[] args) {
