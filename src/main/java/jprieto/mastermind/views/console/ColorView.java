@@ -31,8 +31,7 @@ public class ColorView {
 	}
 	
 	void write() {
-		Console console = Console.instance();
-		console.write(ColorView.INITIALS[this.color.ordinal()]);
+		Console.instance().write(ColorView.INITIALS[this.color.ordinal()]);
 	}
 
 }
