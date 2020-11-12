@@ -68,10 +68,10 @@ class  mastermind.views.console.ResultView{
 + ResultView(ProposedCombination proposedCombination, Result result)
 + writeln() : void
 }
-mastermind.views.console.ProposedCombinationView *-down-> mastermind.models.ProposedCombination
-mastermind.views.console.ProposedCombinationView *-down-> mastermind.models.Result
-mastermind.views.console.ProposedCombinationView ..> mastermind.views.console.ColorView
-mastermind.views.console.ProposedCombinationView ..> mastermind.views.MessageView
+mastermind.views.console.ResultView *-down-> mastermind.models.ProposedCombination
+mastermind.views.console.ResultView *-down-> mastermind.models.Result
+mastermind.views.console.ResultView ..> mastermind.views.console.ColorView
+mastermind.views.console.ResultView ..> mastermind.views.MessageView
 
 class  mastermind.views.console.ResumeView{
 + interact(ResumeController resumeController) : boolean

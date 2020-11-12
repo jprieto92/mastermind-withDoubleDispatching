@@ -4,6 +4,7 @@ class  mastermind.views.ErrorView{
 # error: Error
 + ErrorView(Error)
 }
+mastermind.views.ErrorView *-down-> mastermind.models.Error
 
 enum  mastermind.views.MessageView{
 + ATTEMPS: MessageView 
