@@ -1,0 +1,47 @@
+@startuml
+
+class  mastermind.views.console.ConsoleView{
+- startView: StartView
+- playView: PlayView
+- resumeView: ResumeView
++ ConsoleView()
++ visit(StartController): void
++ visit(PlayController): void
++ visit(ResumeController): void
+}
+mastermind.views.View <|-down- mastermind.views.console.ConsoleView
+mastermind.views.console.ConsoleView *-down-> mastermind.views.console.StartView
+mastermind.views.console.ConsoleView *-down-> mastermind.views.console.PlayView
+mastermind.views.console.ConsoleView *-down-> mastermind.views.console.ResumeView
+mastermind.views.console.ConsoleView ..> mastermind.controllers.ResumeController
+mastermind.views.console.ConsoleView ..> mastermind.controllers.StartController
+mastermind.views.console.ConsoleView ..> mastermind.controllers.PlayController
+
+class  mastermind.views.console.ErrorView{
+~ ErrorView(Error)
+~ writeln(): void
+}
+mastermind.views.ErrorView <|-down- mastermind.views.console.ErrorView
+
+class  mastermind.views.console.PlayView{
+~ interact(PlayController): void
+}
+mastermind.views.console.PlayView ..> mastermind.views.console.ResultView
+mastermind.views.console.PlayView ..> mastermind.controllers.PlayController
+
+class mastermind.views.console.ResultView{
+~ writeln(int): void
+}
+utils.WithConsoleView <|-down- mastermind.views.console.ResultView
+
+class mastermind.views.console.ResumeView{
+~ interact(ResumeController): void
+}
+mastermind.views.console.ResumeView ..> mastermind.controllers.ResumeController
+mastermind.views.console.ResumeView ..> utils.YesNoDialog
+
+class mastermind.views.console.StartView{
+~ interact(StartController): void
+}
+mastermind.views.console.StartView ..> mastermind.controllers.StartController
+@enduml
