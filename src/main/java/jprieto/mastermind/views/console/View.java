@@ -1,12 +1,11 @@
 package jprieto.mastermind.views.console;
 
-import jprieto.mastermind.controllers.ControllerVisitor;
 import jprieto.mastermind.controllers.PlayController;
 import jprieto.mastermind.controllers.ResumeController;
 import jprieto.mastermind.controllers.StartController;
 import jprieto.mastermind.controllers.UseCaseController;
 
-public class View extends jprieto.mastermind.views.View implements ControllerVisitor {
+public class View extends jprieto.mastermind.views.View{
 
 	private StartView startView;
 	private PlayView playView;
