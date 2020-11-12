@@ -6,19 +6,11 @@ import jprieto.mastermind.models.Result;
 import jprieto.mastermind.views.MessageView;
 
 public class ResultView {
-	
-	private Result result;
-	private ProposedCombination combination;
 
-	ResultView(ProposedCombination combination, Result result) {
-		this.result = result;
-		this.combination = combination;
-	}
-
-	void writeln() {
-		for (Color color: this.combination.getColors()) {
+	void writeln(ProposedCombination combination, Result result) {
+		for (Color color: combination.getColors()) {
 			new ColorView(color).write();
 		}
-		MessageView.RESULT.writeln(this.result.getBlacks(), this.result.getWhites());
+		MessageView.RESULT.writeln(result.getBlacks(), result.getWhites());
 	}
 }

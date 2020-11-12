@@ -8,31 +8,27 @@ import jprieto.utils.Console;
 
 public class ProposedCombinationView {
 	
-	private ProposedCombination proposedCombination;
-
-	ProposedCombinationView() {
-		this.proposedCombination = new ProposedCombination();
-	}
-
 	public void write() {
-		for (Color color: this.proposedCombination.getColors()) {
+		ProposedCombination proposedCombination = new ProposedCombination();
+		for (Color color: proposedCombination.getColors()) {
 			new ColorView(color).write();
 		}
 	}
 
 	public ProposedCombination read() {
+		ProposedCombination proposedCombination = new ProposedCombination();
 		Console console = Console.instance();
 		Error error;
 		do {
 			error = Error.NULL;
 			MessageView.PROPOSED_COMBINATION.write();
 			String characters = console.readString();
-			error = this.proposedCombination.setCombination(characters);
+			error = proposedCombination.setCombination(characters);
 			if (error != Error.NULL) {
 				new ErrorView(error).writeln();
-				this.proposedCombination.getColors().clear();
+				proposedCombination.getColors().clear();
 			}
 		} while (error != Error.NULL);
-		return this.proposedCombination;
+		return proposedCombination;
 	}
 }

@@ -11,7 +11,7 @@ class PlayView {
     	    MessageView.ATTEMPTS.writeln(playController.getAttemps());
     	    new SecretCombinationView().writeln();
     		for (int i = 0; i < playController.getAttemps(); i++) {
-    			new ResultView(playController.getProposedCombination(i), playController.getResult(i)).writeln();
+    			new ResultView().writeln(playController.getProposedCombination(i), playController.getResult(i));
     		}
     		if (playController.isMasterMind()){
                 MessageView.WINNER.writeln();

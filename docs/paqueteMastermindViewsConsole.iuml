@@ -49,27 +49,16 @@ mastermind.views.console.PlayView ..> mastermind.views.console.SecretCombination
 mastermind.views.console.PlayView ..> mastermind.views.console.ProposedCombinationView
 
 class  mastermind.views.console.ProposedCombinationView{
-- ProposedCombination proposedCombination
-
-+ ProposedCombinationView()
 + write() : void
 + read() : ProposedCombination
 }
-mastermind.views.console.ProposedCombinationView *-down-> mastermind.models.ProposedCombination
-' mastermind.views.console.ProposedCombinationView ..> mastermind.models.Color
 mastermind.views.console.ProposedCombinationView ..> mastermind.utils.Console
 mastermind.views.console.ProposedCombinationView ..> mastermind.views.console.ErrorView
 mastermind.views.console.ProposedCombinationView ..> mastermind.views.MessageView
 
 class  mastermind.views.console.ResultView{
-- Result result
-- ProposedCombination proposedCombination
-
-+ ResultView(ProposedCombination proposedCombination, Result result)
-+ writeln() : void
++ writeln(ProposedCombination proposedCombination, Result result) : void
 }
-mastermind.views.console.ResultView *-down-> mastermind.models.ProposedCombination
-mastermind.views.console.ResultView *-down-> mastermind.models.Result
 mastermind.views.console.ResultView ..> mastermind.views.console.ColorView
 mastermind.views.console.ResultView ..> mastermind.views.MessageView
 
@@ -81,12 +70,8 @@ mastermind.views.console.ResumeView ..> mastermind.views.YesNoDialog
 mastermind.views.console.ResumeView ..> mastermind.views.MessageView
 
 class  mastermind.views.console.SecretCombinationView{
-- SecretCombination secretCombination
-
-+ SecretCombinationView()
 + writeln() : void
 }
-mastermind.views.console.SecretCombinationView *-down-> mastermind.models.SecretCombination
 mastermind.views.console.SecretCombinationView ..> mastermind.utils.Console
 mastermind.views.console.SecretCombinationView ..> mastermind.views.MessageView
 
