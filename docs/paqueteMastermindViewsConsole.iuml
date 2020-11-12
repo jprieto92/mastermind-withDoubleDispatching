@@ -88,7 +88,7 @@ class  mastermind.views.console.SecretCombinationView{
 }
 mastermind.views.console.SecretCombinationView *-down-> mastermind.models.SecretCombination
 mastermind.views.console.SecretCombinationView ..> mastermind.utils.Console
-mastermind.views.console.SecretCombinationView ..> mastermind.view.MessageView
+mastermind.views.console.SecretCombinationView ..> mastermind.views.MessageView
 
 class  mastermind.views.console.StartView{
 + interact(StartController startController) : void
