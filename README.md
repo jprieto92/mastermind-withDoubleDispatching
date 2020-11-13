@@ -3,7 +3,7 @@
 * **Author**: Javier Prieto Cepeda - javier.prieto.cepeda@alumnos.upm.es
 * **Version**: Mastermind game implementation with double dispatching
 <p align="center">
-<img width="300" height="300" src="docs/images/images/dibujo.jpg">
+<img width="300" height="300" src="docs/images/Dibujo.jpg">
 </p>
 
 # Structure
