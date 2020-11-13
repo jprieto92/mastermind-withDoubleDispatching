@@ -33,7 +33,7 @@ The structure of this repository is:
 
 ### mastermind
 
-![mastermind](docs/images/paqueteMasterMind.png)
+![mastermind](docs/images/paqueteMastermind.png)
 
 ### mastermind.views
 
