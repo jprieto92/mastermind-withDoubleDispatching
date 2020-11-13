@@ -3,7 +3,7 @@
 * **Author**: Javier Prieto Cepeda - javier.prieto.cepeda@alumnos.upm.es
 * **Version**: Mastermind game implementation with double dispatching
 <p align="center">
-<img width="300" height="300" src="images/dibujo.jpg">
+<img width="300" height="300" src="docs/images/images/dibujo.jpg">
 </p>
 
 # Structure
@@ -26,30 +26,32 @@ The structure of this repository is:
 
 ## Arquitecture
 
+![arquitecture](docs/images/arquitectura.png)
 
 ## Packages
 
 
 ### mastermind
 
-
+![mastermind](docs/images/paqueteMasterMind.png)
 
 ### mastermind.views
 
-
+![views](docs/images/paqueteMasterMindViews.png)
 
 ### mastermind.views.console
 
-
+![console](docs/images/paqueteMasterMindViewsConsole.png)
 
 ### mastermind.controllers
 
-
+![controllers](docs/images/paqueteMasterMindControllers.png)
 
 ### mastermind.models
 
-
+![models](docs/images/paqueteMasterMindModels.png)
 
 ### mastermind.utils
 
+![views](docs/images/paqueteMasterMindUtils.png)
 
