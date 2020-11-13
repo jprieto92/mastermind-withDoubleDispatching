@@ -37,21 +37,21 @@ The structure of this repository is:
 
 ### mastermind.views
 
-![views](docs/images/paqueteMasterMindViews.png)
+![views](docs/images/paqueteMastermindViews.png)
 
 ### mastermind.views.console
 
-![console](docs/images/paqueteMasterMindViewsConsole.png)
+![console](docs/images/paqueteMastermindViewsConsole.png)
 
 ### mastermind.controllers
 
-![controllers](docs/images/paqueteMasterMindControllers.png)
+![controllers](docs/images/paqueteMastermindControllers.png)
 
 ### mastermind.models
 
-![models](docs/images/paqueteMasterMindModels.png)
+![models](docs/images/paqueteMastermindModels.png)
 
 ### mastermind.utils
 
-![views](docs/images/paqueteMasterMindUtils.png)
+![views](docs/images/paqueteMastermindUtils.png)
 
