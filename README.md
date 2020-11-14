@@ -10,9 +10,10 @@
 
 The structure of this repository is:
 
-* **docs**: This folder has the UML diagrams sources and images.
+* **docs**: This folder has the UML diagrams sources (iuml) and images (png).
 * **src**: This folder has the mastermind code (Java language).
 * **pom.xml**: This file has the maven project configuration.
+* **mastermind_javierprietocepeda.jar**: Mastermind executable jar file.
 
 # Requisites
 
