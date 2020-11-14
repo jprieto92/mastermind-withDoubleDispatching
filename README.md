@@ -18,10 +18,10 @@ The structure of this repository is:
 # Requisites
 
 * Wiki - Youtube: https://www.youtube.com/watch?v=2-hTeg2M6GQ
-* Funcionalidad: Básica
-* Interfaz: Texto
-* Distribución: Standalone
-* Persistencia: No
+* Functionality: Basic
+* Interface: Text
+* Distribution: Standalone
+* Persistence: No
 
 # Project Design
 
